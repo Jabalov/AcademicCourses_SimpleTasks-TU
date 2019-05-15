@@ -89,7 +89,7 @@ def entropy(n, labels):
     ent = 0
     for label in labels.keys():
         p_x = labels[label] / n
-        ent += - p_x * math.log(p_x, 2)
+        ent -=  p_x * math.log(p_x, 2)
     return ent
 
 
